@@ -17,7 +17,7 @@ Welcome to the official repository for **Sparky Neon**, a vibrant, modern, and r
 
 ## 🔍 Preview
 
-> 💻 [Live Site Demo (GitHub Pages)](https://yourusername.github.io/sparkyneon-website/)
+> 💻 [Live Site Demo (GitHub Pages)](https://skanthiwar.github.io/sparkyneon-website/)
 
 ---
 
