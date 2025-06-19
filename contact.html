@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Sparky Neon</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+ /* === Contact Page Hero Section === */
+.hero-brand {
+  background: radial-gradient(circle at center, #00483f, #000);
+  color: #ffffff;
+  padding: 80px 0 60px;
+}
+
+.hero-brand h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-brand p {
+  font-size: 1.05rem;
+  color: #d2d2d2;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* === Contact Section === */
+.contact-section {
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+/* Headings */
+.contact-section h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.text-neon {
+  color: #00ffd1 !important;
+}
+
+/* Contact Info Icons */
+.contact-section p i {
+  color: #00ffd1;
+}
+
+/* Social Icons */
+.contact-section a i {
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover i {
+  color: #00ffd1;
+}
+
+/* === Form Styling === */
+.contact-section .form-control {
+  background-color: #181818;
+  border: 1px solid #00ffd1;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.contact-section .form-control::placeholder {
+  color: #cccccc;
+  opacity: 0.9;
+}
+
+.contact-section .form-control:focus {
+  border-color: #00ffd1;
+  box-shadow: 0 0 8px rgba(0, 255, 209, 0.5);
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Button Style */
+.btn-neon {
+  background-color: #000;
+  border: 2px solid #00ffd1;
+  color: #00ffd1;
+  font-weight: 600;
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn-neon:hover {
+  background-color: #00ffd1;
+  color: #000;
+  box-shadow: 0 0 12px rgba(0, 255, 209, 0.5);
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  .hero-brand h1 {
+    font-size: 2rem;
+  }
+
+  .contact-section h4 {
+    font-size: 1.4rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Header -->
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+    <a class="navbar-brand" href="#">Sparky Neon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="customneon.html">Custom Neon</a></li>
+        <li class="nav-item"><a class="nav-link" href="bestsellers.html">Best Sellers</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 me-lg-4">
+        <a href="#" class="btn btn-neon">Design Your Sign</a>
+        <a href="#account" class="text-white fs-5"><i class="fas fa-user"></i></a>
+        <a href="#cart" class="text-white fs-5"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero-brand text-center">
+  <div class="container">
+    <h1 class="display-5">Get In Touch</h1>
+    <p>We're here to answer any questions about our neon signs or your order.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section py-5" id="contact">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Contact Info -->
+      <div class="col-md-5">
+        <h4 class="mb-4 text-neon">Contact Details</h4>
+        <p><i class="fas fa-envelope me-2 text-neon"></i> hello@sparkyneon.in</p>
+        <p><i class="fas fa-phone me-2 text-neon"></i> +91 98765 43210</p>
+        <p><i class="fas fa-map-marker-alt me-2 text-neon"></i> Nagpur, Maharashtra, India</p>
+        <div class="mt-4">
+          <h6 class="mb-2">Follow Us</h6>
+          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-pinterest"></i></a>
+          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-7">
+        <h4 class="mb-4 text-neon">Send Us a Message</h4>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Subject" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-neon">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="bg-black text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">About Sparky Neon</h5>
+          <p>We craft premium LED neon signs for every occasion — fully customized, high-quality, and made in India with love and precision.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-semibold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#collections" class="footer-link">Custom Neon</a></li>
+            <li><a href="#best" class="footer-link">Best Sellers</a></li>
+            <li><a href="#faq" class="footer-link">FAQs</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-semibold">Support</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Shipping Policy</a></li>
+            <li><a href="#" class="footer-link">Returns & Refunds</a></li>
+            <li><a href="#" class="footer-link">Warranty</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-semibold">Connect With Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="mt-3 small">Email: hello@sparkyneon.in<br>Phone: +91 98765 43210</p>
+        </div>
+      </div>
+      <hr class="border-light" />
+      <div class="text-center small">&copy; 2025 Sparky Neon. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

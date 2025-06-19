@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Neon | Sparky Neon</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+/* === Custom Design Hero Section === */
+.hero-brand {
+  padding: 80px 0 60px;
+  background: radial-gradient(circle at center, #003c36, #000);
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-brand h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-brand p {
+  font-size: 1.05rem;
+  color: #d2d2d2;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.hero-brand .btn {
+  padding: 0.6rem 1.6rem;
+  font-size: 0.95rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Neon Button Style */
+.btn-neon {
+  background-color: transparent;
+  color: #00ffd1;
+  border: 2px solid #00ffd1;
+  box-shadow: 0 0 10px rgba(0, 255, 209, 0.2);
+}
+
+.btn-neon:hover {
+  background-color: #00ffd1;
+  color: #000;
+  box-shadow: 0 0 12px rgba(0, 255, 209, 0.5);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero-brand h1 {
+    font-size: 2rem;
+  }
+
+  .hero-brand p {
+    font-size: 0.95rem;
+  }
+
+  .hero-brand .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.4rem;
+  }
+}
+
+/* === Form Section === */
+.section-bright-categories {
+  background: #0d0d0d;
+  color: #ffffff;
+}
+
+.section-bright-categories .section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #00ffd1;
+}
+
+/* === Form Elements === */
+.section-bright-categories .form-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.section-bright-categories .form-control,
+.section-bright-categories .form-select {
+  background-color: #181818;
+  border: 1px solid #00ffd1;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.section-bright-categories .form-control::placeholder,
+.section-bright-categories .form-control:placeholder-shown {
+  color: #cccccc;
+  opacity: 0.9;
+}
+
+.section-bright-categories .form-control:focus,
+.section-bright-categories .form-select:focus {
+  border-color: #00ffd1;
+  box-shadow: 0 0 8px rgba(0, 255, 209, 0.5);
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.section-bright-categories small.text-muted {
+  font-size: 0.8rem;
+  color: #aaa !important;
+}
+
+/* === Submit Button === */
+.section-bright-categories .btn-neon {
+  background-color: #000;
+  border: 2px solid #00ffd1;
+  color: #00ffd1;
+  font-weight: 600;
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: 0.3s all ease-in-out;
+}
+
+.section-bright-categories .btn-neon:hover {
+  background-color: #00ffd1;
+  color: #000;
+  box-shadow: 0 0 12px rgba(0, 255, 209, 0.5);
+}
+
+/* === Responsive Fixes === */
+@media (max-width: 768px) {
+  .hero-brand h1 {
+    font-size: 2rem;
+  }
+
+  .section-bright-categories .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Header -->
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+    <a class="navbar-brand" href="#">Sparky Neon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Custom Neon</a></li>
+        <li class="nav-item"><a class="nav-link" href="bestsellers.html">Best Sellers</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 me-lg-4">
+        <a href="#" class="btn btn-neon">Design Your Sign</a>
+        <a href="#account" class="text-white fs-5"><i class="fas fa-user"></i></a>
+        <a href="#cart" class="text-white fs-5"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-brand text-center">
+  <div class="container">
+    <h1 class="display-5">Design Your Own Neon Sign</h1>
+    <p>Want to create an amazing vibe for your space? You have reached the right place! We’re here to help with our bespoke custom neon lights. You’ll have the freedom to create your own custom LED neon signs using any text of your choice, affording you the flexibility to create a personalized masterpiece.</p>
+    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+      <a href="#custom-text-form" class="btn btn-neon">Create Custom Text Sign</a>
+      <a href="#custom-logo-form" class="btn btn-neon">Create Neon Logo Sign</a>
+    </div>
+  </div>
+</section>
+
+<!-- Custom Form Section -->
+<section class="py-5 section-bright-categories">
+  <div class="container">
+    <h2 class="section-title">Create Your Unique & Iconic LED Neon Sign</h2>
+    <form id="custom-text-form" class="row g-4">
+      <div class="col-md-6">
+        <label class="form-label text-white">Write Your Text</label>
+        <input type="text" class="form-control" placeholder="e.g., Vaibhav" />
+      </div>
+      <div class="col-md-6">
+        <label class="form-label text-white">Choose Font</label>
+        <select class="form-select">
+          <option selected>Quilla1</option>
+          <option>Script Bold</option>
+          <option>Classic Sans</option>
+        </select>
+        <small class="text-muted d-block mt-1">Font strokes displayed may differ slightly due to LED bending limits.</small>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label text-white">Choose a Colour</label>
+        <select class="form-select">
+          <option>FloMo</option>
+          <option>Pink</option>
+          <option>Blue</option>
+          <option>Warm White</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label text-white">Choose a Size</label>
+        <input type="text" class="form-control" placeholder="151cm x 40cm / 59in x 16in" />
+        <small class="text-muted d-block mt-1">Signs larger than 45" may come in multiple pieces.</small>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label text-white">Backboard</label>
+        <select class="form-select">
+          <option>Cut To Shape (FREE)</option>
+          <option>Cut To Letter (+5%)</option>
+          <option>Full Acrylic Board (+3%)</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label text-white">Backboard Colour</label>
+        <select class="form-select">
+          <option>Black</option>
+          <option>Clear</option>
+          <option>White</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label text-white">Mounting Option</label>
+        <select class="form-select">
+          <option>Wall Mounting Kit (FREE)</option>
+          <option>Hanging Kit (+£9)</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label text-white">Free Dimmer + Remote?</label>
+        <select class="form-select">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <small class="text-muted d-block mt-1">Includes ON/OFF, brightness control, party modes.</small>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label text-white">Placement</label>
+        <select class="form-select">
+          <option>Indoor</option>
+          <option>Outdoor (Adds 1 extra day)</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label text-white">Production Speed</label>
+        <select class="form-select">
+          <option>Standard (3-5 Business Days)</option>
+          <option>RUSH (1-2 Business Days)</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <label class="form-label text-white">Any Special Request?</label>
+        <textarea class="form-control" rows="3" placeholder="Write your instructions here..."></textarea>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-neon px-4 mt-3">Get Quote</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="bg-black text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">About Sparky Neon</h5>
+          <p>We craft premium LED neon signs for every occasion — fully customized, high-quality, and made in India with love and precision.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-semibold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#collections" class="footer-link">Custom Neon</a></li>
+            <li><a href="#best" class="footer-link">Best Sellers</a></li>
+            <li><a href="#faq" class="footer-link">FAQs</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-semibold">Support</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Shipping Policy</a></li>
+            <li><a href="#" class="footer-link">Returns & Refunds</a></li>
+            <li><a href="#" class="footer-link">Warranty</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-semibold">Connect With Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="mt-3 small">Email: hello@sparkyneon.in<br>Phone: +91 98765 43210</p>
+        </div>
+      </div>
+      <hr class="border-light" />
+      <div class="text-center small">&copy; 2025 Sparky Neon. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
