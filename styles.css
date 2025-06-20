@@ -127,6 +127,11 @@ h1, h2, h5 {
   filter: brightness(0.45);
 }
 
+.carousel-item {
+  transition: transform 0.4s ease-in-out; /* Faster transition */
+}
+
+
 /* CTA Overlay */
 .cta-overlay {
   position: absolute;
