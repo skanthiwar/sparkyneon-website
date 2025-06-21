@@ -139,7 +139,7 @@ h1, h2, h5 {
 
 /* ===== Hero Slider Styles ===== */
 .hero-slider .hero-img {
-  height: 70vh;
+  height: 65vh;
   object-fit: cover;
   filter: brightness(0.7);
 }
