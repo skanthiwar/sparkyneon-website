@@ -27,6 +27,12 @@
 </head>
 <body>
 
+<!-- Announcement Bar -->
+<div class="announcement-bar d-flex justify-content-center align-items-center gap-3 py-2 px-3 flex-wrap text-center">
+  <p class="m-0 fw-semibold">🎉 Get 10% OFF your first order! Use code <strong>NEON10</strong> at checkout.</p>
+  <a href="shop.html" class="btn btn-sm btn-announcement">Shop Now</a>
+</div>
+
 
 
     <!-- Header -->
@@ -55,61 +61,126 @@
   </nav>
 </header>
 
-
-
 <!-- Hero Slider Section -->
 <section class="hero-slider text-white position-relative">
-  <div class="cta-overlay text-center">
-    <div class="container">
-      <h1 class="display-4">Illuminate Your Space with Premium Neon Lights</h1>
-      <p>Discover handcrafted LED neon signs designed to enhance your environment with vibrant colors and striking aesthetics.</p>
-      <a href="#collections" class="btn btn-neon mt-3">Explore Custom Creations</a>
-    </div>
-  </div>
-
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active position-relative">
         <img src="images/hero1.jpg" class="d-block w-100 hero-img" alt="Slide 1" loading="lazy">
+        <div class="cta-overlay top-left">
+          <div class="container text-start">
+            <h1 class="display-5 fw-bold">Illuminate Your Space</h1>
+            <p>Premium neon signs to spark style in your room or business.</p>
+            <a href="shop.html" class="btn-banner-cta mt-3">Shop Now</a>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
+
+      <!-- Slide 2 -->
+      <div class="carousel-item position-relative">
         <img src="images/hero5.jpg" class="d-block w-100 hero-img" alt="Slide 2" loading="lazy">
+        <div class="cta-overlay center">
+          <div class="container text-center">
+            <h1 class="display-5 fw-bold">Customize Your Neon</h1>
+            <p>Create a personalized sign that reflects your vibe & brand.</p>
+            <a href="customneon.html" class="btn-banner-cta mt-3">Design Your Sign</a>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
+
+      <!-- Slide 3 -->
+      <div class="carousel-item position-relative">
         <img src="images/hero3.jpg" class="d-block w-100 hero-img" alt="Slide 3" loading="lazy">
+        <div class="cta-overlay bottom-left">
+          <div class="container text-start">
+            <h1 class="display-5 fw-bold">Glow Up Your Events</h1>
+            <p>Perfect for weddings, parties, and special occasions.</p>
+            <a href="#collections" class="btn-banner-cta mt-3">Explore Creations</a>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
+
+      <!-- Slide 4 -->
+      <div class="carousel-item position-relative">
         <img src="images/hero6.jpg" class="d-block w-100 hero-img" alt="Slide 4" loading="lazy">
+        <div class="cta-overlay bottom-right">
+          <div class="container text-end">
+            <h1 class="display-5 fw-bold">Business Branding in Style</h1>
+            <p>Stand out with custom signage that speaks volumes.</p>
+            <a href="customneon.html#logo" class="btn-banner-cta mt-3">Create Logo Sign</a>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
-
 
 <!-- Explore Custom Creations -->
 <section class="text-center py-5 custom-creation-section text-white">
   <div class="container">
-    <h2 class="section-title">Create Your Custom Neon</h2>
-    <p>Bring your vision to light with personalized designs</p>
-    <div class="row justify-content-center g-4 mt-4">
-      <div class="col-md-5">
-        <div class="custom-card rounded shadow">
-          <img src="images/Custom Text.jpg" class="img-fluid" alt="Custom Text" loading="lazy">
-          <h5>Create Custom Text Sign</h5>
-          <a href="customneon.html" class="btn btn-neon mt-2">Start Designing</a>
-        </div>
+    <h2 class="section-title">Explore Our Custom Creations</h2>
+    <p>Bring your vision to life – from LED signs to UV printing & floral art.</p>
+
+    <div class="row g-4 mt-4 row-cols-1 row-cols-sm-2 row-cols-lg-4 justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col">
+        <a href="customneon.html" class="text-decoration-none text-white">
+          <div class="custom-card rounded shadow h-100 overflow-hidden">
+            <div class="card-img-wrapper">
+              <img src="images/Custom Text.jpg" alt="Custom Text" loading="lazy">
+            </div>
+            <h5>Create Custom Text Sign</h5>
+            <div class="btn btn-neon mt-2">Start Designing</div>
+          </div>
+        </a>
       </div>
-      <div class="col-md-5">
-        <div class="custom-card rounded shadow">
-          <img src="images/Custom Logo.jpg" class="img-fluid" alt="Custom Logo" loading="lazy">
-          <h5>Create Neon Logo Sign</h5>
-          <a href="customneon.html" class="btn btn-neon mt-2">Upload Design</a>
-        </div>
+
+      <!-- Card 2 -->
+      <div class="col">
+        <a href="customneon.html" class="text-decoration-none text-white">
+          <div class="custom-card rounded shadow h-100 overflow-hidden">
+            <div class="card-img-wrapper">
+              <img src="images/Custom Logo.jpg" alt="Custom Logo" loading="lazy">
+            </div>
+            <h5>Create Neon Logo Sign</h5>
+            <div class="btn btn-neon mt-2">Upload Logo</div>
+          </div>
+        </a>
       </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+        <a href="uv-printing.html" class="text-decoration-none text-white">
+          <div class="custom-card rounded shadow h-100 overflow-hidden">
+            <div class="card-img-wrapper">
+              <img src="images/UV-Printing.jpg" alt="UV Printing" loading="lazy">
+            </div>
+            <h5>UV Printing on Acrylic</h5>
+            <div class="btn btn-neon mt-2">Explore UV Prints</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col">
+        <a href="flora.html" class="text-decoration-none text-white">
+          <div class="custom-card rounded shadow h-100 overflow-hidden">
+            <div class="card-img-wrapper">
+              <img src="images/Flora-Art.jpg" alt="Floral Art" loading="lazy">
+            </div>
+            <h5>Floral + Neon Decor</h5>
+            <div class="btn btn-neon mt-2">View Floral Signs</div>
+          </div>
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
-
 
   <!-- Shop Categories -->
   <section id="collections" class="section-bright-categories text-center">
@@ -244,7 +315,7 @@
 </section>
 
 <!-- Brand Promo Video -->
-<section class="promo-video-section bg-dark text-white text-center py-5">
+<!-- <section class="promo-video-section bg-dark text-white text-center py-5">
   <div class="container">
     <h2 class="section-title">Behind the Glow – The Sparky Neon Story</h2>
     <p class="mb-4">Watch how our handcrafted signs come to life and light up real spaces.</p>
@@ -252,7 +323,7 @@
       <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Sparky Neon Promo Video" allowfullscreen></iframe>
     </div>
   </div>
-</section>
+</section> -->
 
   <!-- Why Choose Us -->
   <section class="bg-layer py-5 text-center">
